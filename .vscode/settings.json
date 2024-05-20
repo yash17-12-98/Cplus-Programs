@@ -1,5 +1,6 @@
 {
   "files.associations": {
-    "namaste_duniya": "c"
+    "namaste_duniya": "c",
+    "iostream": "cpp"
   }
 }
