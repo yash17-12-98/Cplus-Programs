@@ -1,12 +1,13 @@
 #include <iostream>
 using namespace std;
 
-// A B C D 
-// B C D E 
-// C D E F 
-// D E F G 
+// 4
+// 3 4
+// 2 3 4
+// 1 2 3 4
 
 int main(){
+
     int n;
 
     cout << "Enter the value of n: ";
@@ -16,15 +17,16 @@ int main(){
     int i = 1;
 
     while(i <= n){
-
         int j = 1;
-        while(j <= n){
-            char ch = 'A'+ i + j - 2;
-            cout << ch << " ";
-            j++;
-        } 
-        cout << endl;
+        int start = n - i + 1; 
 
-    i++;
-    }
+        while(j <= i){
+            cout << start << " ";
+            start++;
+            j++; 
+        }
+        cout << endl;
+        i++;
+    } 
+
 }
